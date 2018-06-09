@@ -1,19 +1,22 @@
-
-.navbar-lj{
-	
+.navbar-default{
+	position: absolute;
+	top: 0;
+	background-color: transparent;
 	border:none;
 }
 
 .logo{
-	width: 100px;
+	width: 120px;
+}
+.navbar-lj .menu-lj li a{
+	font-size: 18px;
+	color: #fff;
+}
 
-}
-.carousel-lj{
-	position: absolute;
-}
 
 .menu-lj{
-	margin-top: 30px;
+	margin-top: 0.5em;
+	padding-bottom: 0.5em;
 }
 
 
@@ -34,6 +37,16 @@
 .sec-1-2{
 	margin-top: 40px;
 	margin-bottom: 40px;
+}
+
+
+
+@media (max-width: 768px){
+.navbar-collapse{
+	background-color: rgba(0,0,0,0.79);
+	border-top: none;
+}
+
 }
 
 /*-----Footer-----*/

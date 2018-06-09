@@ -8,10 +8,39 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
- 	<header style="height: 500px; width: 100%" >
- 		<nav class="navbar navbar-inverse navbar-lj" role="navigation">
+  <nav class="navbar navbar-default navbar-fixed-top navbar-lj ">
 
+      <!---barra desplegable--->
+
+      <div class="container menu-lj">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-lj" aria-expanded="false">
+          <span class="sr-only">Desplegar / Ocultar Menu</span>
+          <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+
+      </button>
+        <a href="#" class="navbar-brand " style="position: relative;"><img class="logo" src="images/latam_logo.png"></a>
+      </div>
+        
+
+      <!--- Menu  --->
+
+
+      <div class="collapse navbar-collapse" id="navegacion-lj">
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Equipo</a></li>
+        <li><a target="_blank" href="http://blog.desafiolatam.com">Blog</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+ 	
+ 		
+      <header style="height: 500px; width: 100%" >
            <!-----carousel----->
 
  			<div id="myCarousel" class="carousel slide carousel-lj" data-ride="carousel">
@@ -30,7 +59,7 @@
 
 				    <div class="item active">
              <img class="d-block w-100" src="images/bg.jpeg" alt="First slide" data-holder-rendered="true" style="height: 500px; width: 100%">
-                <div class="carousel-caption hidden-xs hidden-sm" style="margin-bottom: 5%">
+                <div class="carousel-caption">
                   <h2>COMIENZA UNA NUEVA VIDA Y <br> ÚNETE AL MUNDO <br> TECNOLÓGICO</h2>
                   <a class="btn btn-primary" href="#"> Inscribete! </a>
                   <a class="btn btn-success" href="#"> Mas info! </a>
@@ -39,7 +68,7 @@
             </div>
 
 				    <div class="item"> <img class="d-block w-100" src="images/bg22.jpeg" alt="#" style="height: 500px; width: 100%">
-               <div class="carousel-caption hidden-xs hidden-sm" style="margin-bottom: 5%">
+               <div class="carousel-caption">
                   <h2>COMIENZA UNA NUEVA VIDA Y <br> ÚNETE AL MUNDO <br> TECNOLÓGICO</h2>
                   <a class="btn btn-primary" href="#"> Inscribete! </a>
                   <a class="btn btn-success" href="#"> Mas info! </a>
@@ -48,7 +77,7 @@
             </div>
 
 				    <div class="item"> <img class="d-block w-100" src="images/bg3.jpg" alt="#" style="height: 500px; width: 100%"> 
-               <div class="carousel-caption hidden-xs hidden-sm" style="margin-bottom: 5%">
+               <div class="carousel-caption">
                   <h2>COMIENZA UNA NUEVA VIDA Y <br> ÚNETE AL MUNDO <br> TECNOLÓGICO</h2>
                   <a class="btn btn-primary" href="#"> Inscribete! </a>
                   <a class="btn btn-success" href="#"> Mas info! </a>
@@ -71,52 +100,14 @@
 
 			<!---barra desplegable--->
 
- 			<div class="container menu-lj">
- 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-lj">
- 				<span class="sr-only"> Desplegar / Ocultar Menu</span>	
- 				<span class="icon-bar"></span>
- 				<span class="icon-bar"></span>
- 				<span class="icon-bar"></span>
-
- 				</button>
- 				<a href="#" class="navbar-brand " style="position: relative;"><img class="logo" src="images/latam_logo.png"></a>
- 				
-
- 			<!--- Menu  --->
-
-	 			<div class="collapse navbar-collapse navbar-right " id="navegacion-lj">
-	 				<ul class="nav navbar-nav">
-	 					<li><a href="#"> Equipo </a></li>
-	 					<li><a href="#"> Blog </a></li>
-	 					<li><a href="#"> Contacto </a></li>
-
-	 				</ul>
-	 			</div>
- 			</div>
- 		</nav> 
+ 			
 
  		</header>
  
  	
   <section class="container main">
 
-     <!-----seccion opcional------------->
-
-
-<div class="hidden-lg">
-<div class=" row division" >
-        <section class="posts col-md-8 col-md-offset-2 sec-1 ">
-        <article class="post clearfix">
-          <h2>COMIENZA UNA NUEVA VIDA Y <br> ÚNETE AL MUNDO <br> TECNOLÓGICO</h2>
-          <a class="btn btn-primary" href="#"> Inscribete! </a>
-          <a class="btn btn-success" href="#"> Mas info! </a>
-          <p style="padding-top: 20px;">Hay una escacez gigante de desarrolladores en el mundo y más aún en Latinoamerica, se nececitan más desarrolladores y Tú puedes ser uno! </p>
-      </section>
-  </div>    
-      </div>
-
-
-
+  
     <!-----seccion 1------------->
 
     <div class=" row division" >
@@ -157,7 +148,7 @@
 
     <!----------seccion contacto------------->
 
- <div class="row" style="text-align: left;">
+ <div  id="contacto" class="row" style="text-align: left;">
       <section class="col-md-8 col-md-offset-2 col-sm-offset-4">
       <div class="contacto col-md-4 pull-left">
         <h2> Contacto</h2>
